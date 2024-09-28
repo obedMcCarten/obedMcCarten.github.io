@@ -1,0 +1,164 @@
+/* Barra de navegación */
+body{
+    font-family: sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.search-btn, .clear-btn {
+    padding: 5px 10px;
+    background-color: #1e90ff;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Sección Hero */
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url('images/cueva.jpg'); /* Imagen local de fondo */
+    background-size: cover;  /* Asegura que la imagen cubra todo el fondo */
+    background-position: center;  /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurece la imagen con una capa transparente */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Iconos de Redes Sociales */
+.social-icons {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons a {
+    margin: 10px 0;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+.results-container {
+    background-color: #f9f9f9; /* Fondo claro para diferenciar */
+    border: 1px solid #ccc; /* Borde gris claro */
+    padding: 15px;
+    border-radius: 8px;
+    width: 90%; /* Ajustar el ancho de la caja */
+    margin: 20px auto; /* Centrar la caja */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+
+    display: none; /* Esconde el contenedor por defecto */
+}
+
+/* Título de las ciudades */
+.results-container h2 {
+    font-size: 1.8em;
+    color: #333; /* Color más oscuro para el título */
+    margin-bottom: 10px;
+}
+
+/* Descripción de la ciudad */
+.results-container p {
+    font-size: 1.2em;
+    color: #666; /* Color más suave para el texto */
+}
+
+/* Imágenes (si se arreglan) */
+.results-container img {
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    border-radius: 5px; /* Bordes redondeados para un toque estético */
+    margin-bottom: 15px;
+}
+
+/* Botón de búsqueda */
+.search-bar input[type="text"] {
+    width: 70%; /* Ancho del campo de búsqueda */
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #007BFF; /* Azul llamativo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar input[type="submit"]:hover {
+    background-color: #0056b3; /* Azul más oscuro en hover */
+}

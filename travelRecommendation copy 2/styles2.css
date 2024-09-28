@@ -1,0 +1,114 @@
+/* Barra de navegación */
+
+body{
+    font-family: sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sección About Us */
+.about-us {
+    position: relative;
+    min-height: 100vh;  /* Aseguramos que la sección ocupe toda la altura de la pantalla */
+    background-image: url('images/cueva.jpg'); /* Imagen de fondo local */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centrar verticalmente */
+    padding: 20px;  /* Añadir espaciado alrededor del contenido */
+}
+
+.about-us .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa oscura */
+    z-index: 1;
+}
+
+.about-content {
+    position: relative;
+    z-index: 2;  /* Aseguramos que el texto esté por encima de la capa de fondo */
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;  /* Centrar horizontalmente */
+    padding: 20px;  /* Añadir espaciado dentro del contenido */
+}
+
+.about-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Sección del Equipo */
+.team-section {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el equipo */
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;  /* Permitir que los cards se envuelvan si no caben en una fila */
+    gap: 20px;  /* Añadir espacio entre las tarjetas */
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.team-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;  /* Alinear el texto a la izquierda dentro de cada tarjeta */
+}
+
+.team-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.team-card p {
+    font-size: 1rem;
+}
